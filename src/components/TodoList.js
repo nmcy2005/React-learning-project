@@ -15,7 +15,7 @@ class TodoList extends React.Component {
     this.setState((old_state) => {
       const new_state = old_state.todos.map((todo) => {
         if (todo.id === id) {
-          todo.time = "finished";
+          todo.completed = !todo.completed;
         }
         return todo;
       });
@@ -32,6 +32,7 @@ class TodoList extends React.Component {
         desc={todo.desc}
         time={todo.time}
         id={todo.id}
+        completed={todo.completed}
         handleChange={this.handleChange}
       />
     ));
