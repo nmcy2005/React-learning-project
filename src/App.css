@@ -1,0 +1,56 @@
+.main {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(51, 51, 255),
+    rgb(128, 128, 255)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.todo-item {
+  background-color: darkblue;
+  border-radius: 10px;
+  color: white;
+  width: 60vh;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item p,
+.todo-item input {
+  margin: 20px;
+}
+
+.add-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+}
+
+.add-item-input input {
+  border: none;
+  height: 50px;
+  border: 1px solid blue;
+}
+
+#input-left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.add-item-submit button {
+  height: 53px;
+  width: 70px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+}
